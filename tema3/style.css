@@ -1,0 +1,113 @@
+:root{
+    --nav-width: 5rem;
+    --bg-color-primary: rgb(43, 42, 42);
+    --bg-color-secondary: rgb(133, 130, 130);
+    --bg-color-mainBlack: rgb(0, 0, 0);
+    --bg-color-mainGreen: rgb(86, 180, 136);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Tahoma, sans-serif;
+}
+
+main{
+    margin-left: var(--nav-width);
+    padding-left: 1rem;
+    padding-top: 1rem;
+    line-height: 1.5rem;
+}
+
+main h1{
+    margin-bottom: 1.5rem;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+.navbar{
+    width: var(--nav-width);
+    height: 100vh;
+
+    position: fixed;
+
+    background-color: var(--bg-color-primary);
+}
+
+.nav-link{
+    height: 5rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    text-decoration: none;
+    color: var(--bg-color-secondary);
+}
+
+.nav-link svg{
+    height: 2rem;
+    color: var(--bg-color-secondary);
+}
+
+.nav-link span{
+    display: none;
+}
+
+.navbar:hover .nav-link span,
+.navbar:hover .nav-link i{
+    display: inline;
+} 
+
+.navbar:hover{
+    width: 16rem;
+}
+
+.navbar:hover .nav-item:first-child svg{
+    display: none;
+}
+
+.navbar:hover .nav-item:first-child span{
+    margin: 0;
+}
+
+.nav-link:hover{
+    background-color: var(--bg-color-mainBlack);
+    border-bottom: 2px solid var(--bg-color-mainGreen)
+}
+
+.nav-link svg:hover{
+    color: var(--bg-color-mainGreen)
+}
+
+.navbar .nav-item:first-child{
+    background-color: var(--bg-color-mainBlack);
+}
+
+.navbar-nav{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item:first-child{
+    margin-bottom: 1rem;
+}
+
+.nav-item{
+    flex: 1;
+}
+
+.nav-item:last-child{
+    flex: 4;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
