@@ -1,0 +1,25 @@
+.movie-details{
+    display: flex;
+}
+
+.card-img-top.movie-details-img{
+    width: 30%;
+}
+
+.card{
+    margin-top: 2rem;
+}
+
+.card-title{
+    margin-bottom: 0;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.goToImdbBtn {
+    max-width: 30%;
+}

@@ -1,0 +1,19 @@
+.card-img-top.movie{
+    height: 22rem;
+}
+
+.card.movie{
+    height: 30.5rem;
+    margin: 1rem;
+}
+
+.col{
+    width: 18rem;
+    margin-right: 0;
+    padding: 0;
+}
+
+.movie-item{  
+    display: flex;
+    justify-content: center;
+}
